@@ -1,0 +1,77 @@
+.food-form {
+    max-width: 400px;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .food-form:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .food-form h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .food-form form {
+    text-align: left;
+  }
+  
+  .food-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .food-form input[type="checkbox"],
+  .food-form input[type="text"],
+  .food-form input[type="number"],
+  .food-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+  }
+  
+  .food-form input[type="checkbox"]:focus,
+  .food-form input[type="text"]:focus,
+  .food-form input[type="number"]:focus,
+  .food-form select:focus {
+    border-color: #3b82f6;
+    outline: none;
+    border-width: 2px;
+  }
+  
+  .food-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3b82f6;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1em;
+  }
+  
+  .food-form button[type="submit"]:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+  }
+  
+  .food-form .error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  

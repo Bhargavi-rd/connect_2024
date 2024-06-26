@@ -1,0 +1,81 @@
+/* Pricing Component Styles */
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #1e3a8a, #6c757d, #ff4501);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pricing-card {
+  background: linear-gradient(135deg, #1e3a8a, #ff4501); /* Adjusted background colors */
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 1; /* Default opacity for enabled cards */
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  display: flex;
+  align-items: stretch;
+}
+
+.card-icon {
+  width: 280px;
+  height: auto;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  border-radius: 0 10px 10px 0;
+}
+
+.card-text h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.card-text .price {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.card-text p {
+  margin: 0;
+}
+
+/* Reverse layout for right-aligned image */
+.reverse .card-content {
+  flex-direction: row-reverse;
+}
+
+.reverse .card-icon {
+  border-radius: 0 10px 10px 0;
+}
+
+.reverse .card-text {
+  border-radius: 10px 0 0 10px;
+}
+
+/* Style for disabled cards */
+.pricing-card.disabled {
+  filter: grayscale(100%);
+  pointer-events: none; /* Disable pointer events */
+  opacity: 0.5;
+}
